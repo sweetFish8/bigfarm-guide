@@ -9,16 +9,16 @@ export const metadata = {
 export default function DatabaseIndex() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <nav className="text-sm text-stone-500 mb-6">
-        <Link href="/" className="hover:text-green-700">ホーム</Link>
+      <nav className="text-sm text-stone-500 dark:text-stone-400 mb-6">
+        <Link href="/" className="hover:text-green-700 dark:text-green-400">ホーム</Link>
         <span className="mx-2">/</span>
         <span>データベース</span>
       </nav>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-3">
+      <h1 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-300 mb-3">
         ファーム別データベース
       </h1>
-      <p className="text-stone-600 mb-10 max-w-3xl">
+      <p className="text-stone-600 dark:text-stone-300 mb-10 max-w-3xl">
         ファーム（メイン／ホースランチ／グルメ／フラワーバレー／フィッシュ）ごとに、
         作物・家畜・建物・加工品の個別データを確認できます。
       </p>

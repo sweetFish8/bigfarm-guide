@@ -27,7 +27,7 @@ export default function Navbar() {
             height={36}
             className="rounded-md object-cover"
           />
-          <span>Bigfarm 攻略</span>
+          <span><span className="font-display text-yellow-200">Bigfarm</span> 攻略</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">

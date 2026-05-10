@@ -25,7 +25,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="border-t border-stone-700 text-center py-4 text-xs text-stone-500">
+      <div className="border-t border-stone-700 text-center py-4 text-xs text-stone-500 dark:text-stone-400">
         © {new Date().getFullYear()} Bigfarm 攻略サイト
       </div>
     </footer>

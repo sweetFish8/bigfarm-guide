@@ -39,7 +39,7 @@ export default function ContactPage() {
           <p className="text-muted mb-6">
             お問い合わせを受け付けました。内容を確認のうえ、担当者よりご連絡いたします。
           </p>
-          <div className="bg-amber-50 dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-lg p-4 text-sm text-left mb-6">
+          <div className="bg-amber-50 dark:bg-stone-900 dark:bg-stone-800 border border-amber-200 dark:border-amber-900 dark:border-stone-700 rounded-lg p-4 text-sm text-left mb-6">
             <p><span className="font-semibold">お名前：</span>{form.name}</p>
             <p><span className="font-semibold">メール：</span>{form.email}</p>
             <p><span className="font-semibold">種別：</span>{form.category}</p>
@@ -125,7 +125,7 @@ export default function ContactPage() {
           <button
             type="button"
             onClick={() => setForm({ name: "", email: "", category: "general", message: "" })}
-            className="px-6 py-3 rounded-full border border-card-border hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+            className="px-6 py-3 rounded-full border border-card-border hover:bg-stone-100 dark:bg-stone-900 dark:hover:bg-stone-800 transition-colors"
           >
             クリア
           </button>

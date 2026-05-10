@@ -9,18 +9,18 @@ export const metadata = {
 export default function LimitedIndex() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <nav className="text-sm text-stone-500 mb-6">
-        <Link href="/" className="hover:text-green-700">ホーム</Link>
+      <nav className="text-sm text-stone-500 dark:text-stone-400 mb-6">
+        <Link href="/" className="hover:text-green-700 dark:text-green-400">ホーム</Link>
         <span className="mx-2">/</span>
-        <Link href="/database" className="hover:text-green-700">データベース</Link>
+        <Link href="/database" className="hover:text-green-700 dark:text-green-400">データベース</Link>
         <span className="mx-2">/</span>
         <span>期間限定イベント</span>
       </nav>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-3">
+      <h1 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-300 mb-3">
         🎯 期間限定イベント
       </h1>
-      <p className="text-stone-600 mb-10 max-w-3xl">
+      <p className="text-stone-600 dark:text-stone-300 mb-10 max-w-3xl">
         メインファーム上で進行するタスク系イベント。マップが新規開放されるタイプではなく、
         通常プレイの上で進行する点で「季節限定マップ」と区別されます。
       </p>

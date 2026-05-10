@@ -24,10 +24,10 @@ export default async function FarmPage({ params }) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <nav className="text-sm text-stone-500 mb-6">
-        <Link href="/" className="hover:text-green-700">ホーム</Link>
+      <nav className="text-sm text-stone-500 dark:text-stone-400 mb-6">
+        <Link href="/" className="hover:text-green-700 dark:text-green-400">ホーム</Link>
         <span className="mx-2">/</span>
-        <Link href="/database" className="hover:text-green-700">データベース</Link>
+        <Link href="/database" className="hover:text-green-700 dark:text-green-400">データベース</Link>
         <span className="mx-2">/</span>
         <span>{f.name}</span>
       </nav>
@@ -63,12 +63,12 @@ export default async function FarmPage({ params }) {
           <Link
             key={c.slug}
             href={`/database/${f.slug}/${c.slug}`}
-            className="block bg-white rounded-2xl p-6 border border-stone-200 hover:border-green-500 hover:shadow-md transition-all"
+            className="block bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-200 dark:border-stone-700 hover:border-green-500 hover:shadow-md transition-all"
           >
             <div className="text-5xl mb-3">{c.icon}</div>
-            <h2 className="text-xl font-bold text-green-800 mb-1">{c.name}</h2>
-            <p className="text-sm text-stone-500 mb-3">{c.items.length} 項目</p>
-            <p className="text-sm font-semibold text-green-700">一覧を見る →</p>
+            <h2 className="text-xl font-bold text-green-800 dark:text-green-300 mb-1">{c.name}</h2>
+            <p className="text-sm text-stone-500 dark:text-stone-400 mb-3">{c.items.length} 項目</p>
+            <p className="text-sm font-semibold text-green-700 dark:text-green-400">一覧を見る →</p>
           </Link>
         ))}
       </div>

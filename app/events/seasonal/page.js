@@ -9,18 +9,18 @@ export const metadata = {
 export default function SeasonalIndex() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <nav className="text-sm text-stone-500 mb-6">
-        <Link href="/" className="hover:text-green-700">ホーム</Link>
+      <nav className="text-sm text-stone-500 dark:text-stone-400 mb-6">
+        <Link href="/" className="hover:text-green-700 dark:text-green-400">ホーム</Link>
         <span className="mx-2">/</span>
-        <Link href="/database" className="hover:text-green-700">データベース</Link>
+        <Link href="/database" className="hover:text-green-700 dark:text-green-400">データベース</Link>
         <span className="mx-2">/</span>
         <span>季節限定ファームマップ</span>
       </nav>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-3">
+      <h1 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-300 mb-3">
         🌌 季節限定ファームマップ
       </h1>
-      <p className="text-stone-600 mb-10 max-w-3xl">
+      <p className="text-stone-600 dark:text-stone-300 mb-10 max-w-3xl">
         期間中だけ開放される別マップ。期間終了で全アイテムが消去され、補償アイテムが配布されます。
         通常のサブ農場とは別枠です。
       </p>
