@@ -68,7 +68,7 @@ export default function ContactPage() {
         攻略情報の誤りのご指摘、追加して欲しいトピック、その他ご感想など、お気軽にどうぞ。
       </p>
 
-      <form onSubmit={handleSubmit} className="bg-card border border-card-border rounded-2xl p-6 md:p-8 shadow-sm space-y-5">
+      <form onSubmit={handleSubmit} noValidate className="bg-card border border-card-border rounded-2xl p-6 md:p-8 shadow-sm space-y-5">
         <Field label="お名前" required error={errors.name}>
           <input
             type="text"
