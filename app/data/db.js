@@ -1316,12 +1316,12 @@ export const limitedEvents = [
     period: "秋（10日間）",
     desc: "Matildaの古いレシピ本を復元するイベント。(1)毎日10個のキノコ収集、(2)施設稼働で手に入る「レシピのページ」を全頁集める の2軸。",
     rewards: [
-      "全レシピ収集 → Mushroom Cottage（5×5、Happiness 65）",
-      "累計30個 → ローズ種1",
-      "50個 → Wheel of Fortune token 2",
-      "70個 → seaweed humus 2",
-      "90個 → seaweed fertilizer 30",
-      "100個 → Overgrown Tree Stump（4×4、Happiness 37）",
+      { label: "全レシピ収集 → Mushroom Cottage（5×5、Happiness 65）", detail: "イベントの最終目標報酬。広い5×5スペースを使う代わりに Happiness 65 と非常に高い。配置すると周囲の畑/家畜の効率が上がる。" },
+      { label: "累計30個 → ローズ種1", detail: "薔薇の種は花壇装飾の素材。コンポスター・養蜂場と組み合わせると Humus／蜂蜜の生産量が上がる。" },
+      { label: "50個 → Wheel of Fortune token 2", detail: "ルーレット用トークン。1回回すごとに装飾／ゴールド／プレミアム飼料などのいずれかが当たる。" },
+      { label: "70個 → seaweed humus 2", detail: "海藻ベースの腐植土。通常のHumusより収量ボーナスが高い特殊肥料。" },
+      { label: "90個 → seaweed fertilizer 30", detail: "海藻肥料。畑1区画で短時間ブーストが効き、コアサイクルの作物に投入すると大幅な増収。" },
+      { label: "100個 → Overgrown Tree Stump（4×4、Happiness 37）", detail: "副報酬枠の大型装飾。Mushroom Cottage よりサイズが小さくHappiness低めだが、追加で取れる。" },
     ],
     tip: "10日連続で毎日10個（合計100個）必須。施設の稼働を前日まで遅らせ、開始直後に一斉収穫すると効率が上がる。",
   },
@@ -1332,7 +1332,12 @@ export const limitedEvents = [
     icon: "🎡",
     period: "定期（テーマイベント枠）",
     desc: "レベル依存の6タスクを期間内クリア。タスクごと報酬＋全達成でエンド報酬。",
-    rewards: ["装飾", "red coupons", "XP", "Farm Contest points"],
+    rewards: [
+      { label: "装飾", detail: "カウンティフェア限定の観覧車・テント・ステージ等のテーマ装飾セット。Happiness値が高く配置効率に優れる。" },
+      { label: "red coupons", detail: "テーマ装飾アップグレードの専用通貨。最終グレードへの強化に必須で、複数イベントを跨いで蓄積する。" },
+      { label: "XP", detail: "プレイヤーレベル経験値。タスク完了ごとに加算され、農場拡張の解禁レベルに直結する。" },
+      { label: "Farm Contest points", detail: "Farm Contestのランキングポイント。期間内ランキング上位で追加報酬・限定アバターが得られる。" },
+    ],
     tip: "プレイヤーごとタスク取得上限あり、3つまで追加購入可。ギルドのrefreshは10〜120分CD、個人取得は5分CD。",
   },
   {
@@ -1342,7 +1347,11 @@ export const limitedEvents = [
     icon: "🎯",
     period: "1〜2週ごとに循環、月数回（同時最大8イベント）",
     desc: "6タスク（難易度選択可）、各タスクで小報酬＋XP＋Farm Contest点。Floral Parade／Silo Challengeなどのバリアント。",
-    rewards: ["red coupons（テーマ装飾アップグレードに使用）", "XP", "Farm Contest points"],
+    rewards: [
+      { label: "red coupons（テーマ装飾アップグレードに使用）", detail: "全テーマ共通の強化通貨。装飾の最終グレード解禁に使う。年間を通じて貯めておくと、好みのテーマ装飾を一気にMAX強化できる。" },
+      { label: "XP", detail: "タスク完了経験値。難易度の高いタスクほど多く貰える。レベリングの安定収入源。" },
+      { label: "Farm Contest points", detail: "Farm Contestランキング用ポイント。同時開催される複数のテーマイベントを並走するとポイントが急増し上位入賞しやすい。" },
+    ],
     tip: "全達成でテーマ装飾の最終グレードを獲得。",
   },
   {
@@ -1352,7 +1361,10 @@ export const limitedEvents = [
     icon: "🌱",
     period: "各イベント期間中",
     desc: "イベントで限定種子を植え、特殊作物→イベント加工品→交換通貨というチェーン。",
-    rewards: ["イベント通貨", "限定加工品"],
+    rewards: [
+      { label: "イベント通貨", detail: "そのイベント専用の交換通貨（Easter Egg、Snowflake Token、Candy など）。期間中だけ流通する。" },
+      { label: "限定加工品", detail: "Pumpkin Pie、Christmas Cake、Easter Egg などイベント限定レシピで作る加工品。タスク提出やショップ交換に使う。" },
+    ],
     tip: "イベント期間内にチェーンを最後まで回す段取りが鍵。",
   },
 ];

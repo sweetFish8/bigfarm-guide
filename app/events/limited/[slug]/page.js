@@ -50,13 +50,33 @@ export default async function LimitedDetail({ params }) {
 
       <section className="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-6">
         <h2 className="text-xl font-bold text-green-800 mb-3">🎁 報酬</h2>
+        <p className="text-xs text-stone-500 mb-3">▸ をクリックすると詳細を表示します</p>
         <ul className="space-y-2 text-stone-700">
-          {e.rewards.map((r, i) => (
-            <li key={i} className="flex gap-2">
-              <span className="text-amber-700 shrink-0">▸</span>
-              <span>{r}</span>
-            </li>
-          ))}
+          {e.rewards.map((r, i) => {
+            const label = typeof r === "string" ? r : r.label;
+            const detail = typeof r === "string" ? null : r.detail;
+            if (!detail) {
+              return (
+                <li key={i} className="flex gap-2">
+                  <span className="text-amber-700 shrink-0">▸</span>
+                  <span>{label}</span>
+                </li>
+              );
+            }
+            return (
+              <li key={i}>
+                <details className="group bg-white rounded-lg border border-amber-200 open:shadow-md transition-shadow">
+                  <summary className="cursor-pointer flex gap-2 px-3 py-2 list-none items-start hover:bg-amber-50 rounded-lg">
+                    <span className="text-amber-700 shrink-0 transition-transform group-open:rotate-90">▸</span>
+                    <span className="flex-1">{label}</span>
+                  </summary>
+                  <p className="px-3 pb-3 pt-1 text-sm text-stone-600 leading-relaxed border-t border-amber-100 ml-6 mr-2">
+                    {detail}
+                  </p>
+                </details>
+              </li>
+            );
+          })}
         </ul>
       </section>
 
