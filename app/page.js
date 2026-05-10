@@ -131,9 +131,8 @@ export default function Home() {
             <p className="text-sm md:text-base uppercase tracking-widest text-yellow-200 mb-4">
               Goodgame Big Farm 攻略サイト
             </p>
-            <h1 className="text-4xl md:text-6xl font-black mb-6 drop-shadow-lg">
-              <span className="font-display block text-yellow-200 text-3xl md:text-5xl mb-2">Bigfarm</span>
-              <span>を、もっと楽しく。</span>
+            <h1 className="text-4xl md:text-6xl font-black mb-6 drop-shadow-lg leading-tight">
+              <span className="font-display text-yellow-200 mr-2">Bigfarm</span>を、もっと楽しく。
             </h1>
             <p className="text-base md:text-lg max-w-xl mb-8 text-green-50">
               初心者向けの基本ガイドから、上級者の効率プレイのコツまで。
